@@ -36,3 +36,277 @@
     transform: rotate(360deg);
   }
 }
+
+.flight-search-form {
+  margin: 20px;
+}
+
+.input-with-icon {
+  padding-left: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 18px;
+}
+
+.input-date {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  height: 40px;
+  border-radius: 8px;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle .faExchangeAlt {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+.flight-search-form {
+  margin: 20px;
+  position: relative;
+}
+
+.input-with-icon {
+  padding-left: 60px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  width:300px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 18px;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 18px;
+}
+
+
+.input-icon-toggle {
+  position: absolute;
+  top: 50%;
+  /* left: 20px; */
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 16px;
+  margin-left:10px
+}
+
+.sync-icon-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(50% - 20px); /* Center the icon between the two fields */
+}
+
+.sync-icon {
+  font-size: 40px;
+  color: #666;
+  background: white; /* Add background to hide overlap */
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #ccc; /* Optional border to match the input fields */
+}
+
+.custom-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Position the dropdown menu above the toggle */
+.dropdown-custom .dropdown-menu-custom {
+  position: absolute;
+  top: auto; /* Let the browser calculate the distance to top */
+  bottom: 100%; /* Position the menu above the toggle */
+  left: 0;
+  width: 100%; /* Make the dropdown menu the same width as the toggle */
+  z-index: 1000;
+  transform: translateY(-10px); 
+  /* Small offset to avoid overlap with toggle */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Dropdown menu fade-in effect */
+.dropdown-custom .dropdown-menu-custom.show {
+  /* transform: translateY(0); */
+}
+
+
+.no-border-on-focus:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border:none;
+  margin-right:5px;
+}
+
+.counter{
+  background-color:rgb(236, 229, 229);
+  align-items: center;
+  color: #000;
+  padding:5px 15px;
+  margin:5px;
+  border-radius:5px;
+  cursor: pointer;
+}
+.row1-margin{
+  margin-right:20px;
+}
+
+.custom-vector-map {
+  width: 100%;
+  max-height: 100%;
+}
+
+.custom-accordion .accordion-item {
+  margin-bottom: 10px; /* Space between items */
+}
+
+.custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px; /* Fixed height for the accordion header */
+  padding: 0 15px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  font-size: 1.25rem; /* Optional: Adjust the font size */
+  border: 1px solid #ddd; /* Optional: Add a border for clarity */
+}
+
+.custom-body {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd; /* Matches the header */
+  border-top: none; /* Remove border overlap with header */
+  transition: max-height 0.3s ease; /* Smooth expand/collapse */
+  max-height: 0; /* Initially collapsed */
+  overflow: hidden; /* Ensure content is hidden when collapsed */
+}
+
+.accordion-item.active .custom-body {
+  max-height: 300px; /* Or adjust to the content's size */
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+}
+
+.timeline-line {
+  width: 2px;
+  background-color: #ccc;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.flight-details {
+  flex: 1;
+}
+
+.flight-time {
+  /* font-weight: bold; */
+  font-size: 1rem;
+}
+
+.flight-meta {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.flight-delay {
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.text-warning {
+  color: #f0ad4e;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 1rem;
+}
+.operatorCarrier{
+  font-size: 0.8rem; 
+}
+
+.fs-col{
+  display:flex;
+  justify-content:flex-start;
+}
+ .fs-menu{
+  width:300px;
+  z-index:10001;
+ }
+ .fs-menu-div{
+  margin:10px
+ }
+ .fs-menu-foritem{
+  z-index:10001;
+ }
+
+ .icon-bwn-sd{
+  z-index:10000;
+ }
+
+ .source-item{
+  padding-bottom:10px;
+  padding-left:40px;
+  height:60px;
+ }
+ .source-tog-icon{
+  display:flex;
+  justify-content:flex-start;
+ }
+
